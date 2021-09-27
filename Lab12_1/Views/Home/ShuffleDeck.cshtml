@@ -1,0 +1,9 @@
+﻿@model Deck
+@{
+    ViewData["Title"] = "ShuffleDeck";
+}
+
+<h1>The deck has been shuffled!</h1>
+<h2>Draw some cards:</h2>
+
+<a href="/home/drawfive?id=@Model.deck_id" class="btn btn-primary">Draw</a>

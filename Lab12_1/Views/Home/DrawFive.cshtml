@@ -1,0 +1,11 @@
+﻿@model Hand
+@{
+    ViewData["Title"] = "DrawFive";
+}
+
+<h1>Your hand</h1>
+<h2>Don't like your hand? You can redraw <a href="/home/drawfive?id=@Model.deck_id" class="btn btn-danger">here!</a></h2>
+@foreach(Cards cards in Model.cards)
+            {
+                <img src="@cards.image" />
+            }
